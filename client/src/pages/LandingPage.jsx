@@ -19,8 +19,8 @@ export default function LandingPage() {
           <div className="flex flex-col gap-6 animate-fade-up">
             
             {/* Trust Badges */}
-            <div className="flex flex-wrap items-center gap-3 text-xs font-bold text-gray-500 dark:text-gray-400">
-              <span className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-full border border-emerald-100 shadow-sm">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 text-[10px] sm:text-xs font-bold text-gray-500 dark:text-gray-400">
+              <span className="flex items-center gap-1.5 bg-emerald-50 text-emerald-700 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full border border-emerald-100 shadow-sm">
                 <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div> Sahayak-AI Online
               </span>
               <span className="flex items-center gap-1">Trusted</span>
@@ -30,9 +30,9 @@ export default function LandingPage() {
               <span className="flex items-center gap-1">Government Verified</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl font-extrabold text-[#1a1a3a] dark:text-white leading-tight tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1a1a3a] dark:text-white leading-tight tracking-tight">
               Sahayak-AI<br/>
-              <span className="text-[#3a3a7a]">Your Multilingual Public Service Assistant</span>
+              <span className="text-[#3a3a7a] text-3xl md:text-4xl lg:text-5xl mt-2 block">Your Multilingual Public Service Assistant</span>
             </h1>
             
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-xl font-medium leading-relaxed">
@@ -58,12 +58,12 @@ export default function LandingPage() {
             </div>
 
             {/* Simulated 3D Robot / Graphic Area */}
-            <div className="w-72 h-72 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl relative z-10 border-8 border-white dark:border-[#2a2a4a]/50 backdrop-blur-sm mr-12 mt-12">
-               <Bot size={120} className="text-white" />
+            <div className="w-56 h-56 md:w-72 md:h-72 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-2xl relative z-10 border-8 border-white dark:border-[#2a2a4a]/50 backdrop-blur-sm md:mr-12 md:mt-12 mx-auto">
+               <Bot className="text-white w-24 h-24 md:w-32 md:h-32" />
             </div>
 
             {/* Language Selector Card Overlay */}
-            <div className="bg-white dark:bg-[#1a1a2e]/90 backdrop-blur-md border border-white dark:border-[#2a2a4a] p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] w-80 absolute -bottom-12 right-0 z-30">
+            <div className="bg-white dark:bg-[#1a1a2e]/90 backdrop-blur-md border border-white dark:border-[#2a2a4a] p-4 md:p-6 rounded-2xl shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] w-full max-w-xs absolute -bottom-16 md:-bottom-12 right-0 md:right-0 z-30 mx-auto md:mx-0 left-0 md:left-auto">
                <h3 className="font-bold text-gray-900 dark:text-white mb-3 flex items-center gap-2"><Globe size={18} className="text-indigo-600"/> Select Language</h3>
                <div className="bg-gray-50 dark:bg-[#2a2a4a] border border-gray-200 dark:border-[#3a3a5a] rounded-xl px-4 py-2 flex items-center justify-between mb-4 cursor-pointer">
                  <span className="flex items-center gap-2 text-sm font-semibold text-gray-700 dark:text-gray-200"><Globe size={14} className="text-gray-400"/> Hindi</span>
