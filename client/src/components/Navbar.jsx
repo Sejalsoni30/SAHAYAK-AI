@@ -31,30 +31,6 @@ export default function Navbar() {
 
           <div className="flex items-center gap-4">
             
-            <button 
-              onClick={toggleTheme} 
-              className={`relative inline-flex h-8 w-14 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent transition-colors duration-300 ease-in-out focus:outline-none ${isDarkMode ? 'bg-[#2a2a4a] shadow-inner' : 'bg-blue-50 shadow-inner border-blue-100'}`}
-              aria-label="Toggle Dark Mode"
-            >
-              <span className="sr-only">Toggle Dark Mode</span>
-              
-              {/* Sun Icon (Light Mode) */}
-              <span className={`absolute left-1.5 flex h-4 w-4 items-center justify-center transition-opacity duration-300 ${isDarkMode ? 'opacity-0' : 'opacity-100'}`}>
-                <Sun size={14} className="text-amber-500 drop-shadow-sm" />
-              </span>
-              
-              {/* Moon Icon (Dark Mode) */}
-              <span className={`absolute right-1.5 flex h-4 w-4 items-center justify-center transition-opacity duration-300 ${isDarkMode ? 'opacity-100' : 'opacity-0'}`}>
-                <Moon size={14} className="text-indigo-300 drop-shadow-sm" />
-              </span>
-
-              {/* Sliding Thumb */}
-              <span
-                className={`pointer-events-none inline-block h-6 w-6 transform rounded-full bg-white shadow-md ring-1 ring-black/5 transition duration-300 ease-in-out ${
-                  isDarkMode ? 'translate-x-[26px]' : 'translate-x-0.5'
-                }`}
-              />
-            </button>
 
             <div className="hidden sm:block">
               <LanguageSelector />

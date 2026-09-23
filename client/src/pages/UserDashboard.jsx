@@ -34,7 +34,7 @@ export default function UserDashboard() {
     })
     .catch(err => {
       console.error('Error fetching dashboard applications:', err);
-      // For hackathon demo, mock some applications if API fails
+      // For demo, mock some applications if API fails
       setApplications([
         { id: 1, status: 'Processing', created_at: new Date().toISOString(), schemes: { title: 'PM Kisan Samman Nidhi', category: 'Agriculture' } },
         { id: 2, status: 'Approved', created_at: new Date(Date.now() - 86400000 * 5).toISOString(), schemes: { title: 'Ayushman Bharat Yojana', category: 'Health' } }

@@ -48,7 +48,7 @@ export default function About() {
               </div>
             </div>
 
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">The Hackathon Project</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">The Project</h2>
             <p>
               This platform was conceptualized and built as a solution for improving citizen-government interfaces. By leveraging modern Large Language Models (LLMs) combined with Retrieval-Augmented Generation (RAG), Sahayak-AI ensures that the information provided is both highly accessible and strictly accurate.
             </p>
